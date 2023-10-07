@@ -64,6 +64,31 @@ nav a:hover {
   display: flex;
 }
 
+/* About me Section */
+
+#about-section{
+  display: flex; 
+  align-items: center;
+  background-color: aliceblue;
+}
+
+#section-header {
+  flex: 0 0 auto; 
+  margin-right: 20px;
+  color: darkblue;
+}
+
+par-col {
+  display: flex;
+}
+
+.about-par {
+  color: grey;
+  padding: 20px;
+}
+
+
+
 
 
 
