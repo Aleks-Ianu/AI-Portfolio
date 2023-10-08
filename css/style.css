@@ -8,6 +8,11 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+
+h2 {
+  color: black;
+}
+
 /* nav-bar */
 /* changed the padding property to resemble the guide */
 h1 {
@@ -202,7 +207,28 @@ a{
   text-decoration: none;
 }
 
-h2 {
-  color: black;
+/* media query  */
+
+@media only screen and (min-width:375px) and (max-width:819px) {
+  #about-section {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
 }
 
+@media only screen and (min-width:820px) and (max-width:865px) {
+  #about-section {
+
+    flex-wrap: nowrap;
+
+  }
+}
+
+@media only screen and (min-width:1665px) {
+  #section-header {
+    margin-right: 10%;
+  }
+}
