@@ -15,6 +15,9 @@ h1 {
   margin-top: 0;
   background-color: aqua;
 }
+.aqua-a a{
+  color: aqua;
+}
 
 nav {
   padding:0 30px;
@@ -33,11 +36,6 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: #0f0f0f;
-}
-
-nav a{
-  text-decoration: none;
-  color: aqua;
 }
 
 nav a:hover {
@@ -70,12 +68,12 @@ nav a:hover {
   display: flex; 
   align-items: center;
   background-color: aliceblue;
+  flex-wrap: wrap;
 }
 
 #section-header {
-  flex: 0 0 auto; 
-  margin-right: 20px;
-  color: darkblue;
+  margin-right: 150px;
+  
 }
 
 par-col {
@@ -85,22 +83,126 @@ par-col {
 .about-par {
   color: grey;
   padding: 20px;
+  width: 75vw;
+}
+
+/* Work showcase section */
+/* grid structure */
+
+/* background images for projects */
+.page-section {
+  background-color: aliceblue;
+}
+.img-radius {
+  border-radius: 15px;
+}
+
+.project-grid {
+  padding-right: 7%;
+    height: 500px;
+    display: grid;
+    grid-template-columns:1fr 3fr 3fr ;
+    gap: 10px;
+    grid-template-rows:3fr 3fr 3fr 3fr ;
+    grid-template-areas:"work  horiseon    horiseon"
+                        "work  horiseon    horiseon"
+                        "work  led-wall    calculator"
+                        "work  surf-report run-buddy" ;
+
+    
+}
+
+#header-project {
+  grid-area: work;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#led-wall {
+  background-image: url(../images/02-portfolio-1.jpg);
+  grid-area: led-wall;
+  position: relative;
+  
+}
+
+#horiseon {
+  background-image:url("../images/01-html-css-git-challenge-demo.png");
+  grid-area: horiseon;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+#calculator {
+  background-image: url("../images/02-portfolio-2.jpg");
+  grid-area: calculator;
+  background-size: cover;
+  position: relative;
+}
+
+#surf-report {
+  background-image: url("../images/02-portfolio-4.jpg");
+  grid-area: surf-report;
+  background-size: cover;
+  position: relative;
+}
+
+#run-buddy {
+  background-image: url("../images/02-run-buddy.jpg");
+  grid-area: run-buddy;
+  background-size: cover;
+  position: relative;
+}
+
+.project-grid a:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+  border: 2px solid gray;
+}
+
+/* images text */
+
+.link-text {
+  position: absolute;
+  color: #0f0f0f;
+  bottom: 10px;
+  left: 0;
+  max-width:80px ;
+  background-color: rgba(225,225,225, 0.9);
+  padding-right: 20px;
+  padding: 15px 20px;
+  margin-right: 12px;
+  min-width: fit-content;
+  border-radius: 10px;
+}
+
+/* contact section */
+.contact{
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  padding-bottom: 25px;
+  height: 100px;
+}
+.color-icon:hover {
+  color: aqua;
+  transition: 1s;
+}
+.color-icon {
+  color: #0f0f0f;
 }
 
 
-
-
-
-
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.contact-header {
+  margin-bottom: 0;
 }
 
-p {
-  margin: 0;
+a{
+  text-decoration: none;
 }
+
+h2 {
+  color: black;
+}
+
