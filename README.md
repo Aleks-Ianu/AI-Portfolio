@@ -15,7 +15,7 @@ QR code of live page:
 
 ![qr code for  project](image.png)
 
-![screenshot of project ](image-1.png)
+![screenshot of project ](image-1.jpeg)
 
 ## License
 
