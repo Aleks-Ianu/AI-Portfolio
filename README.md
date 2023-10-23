@@ -1,6 +1,5 @@
 
-# Name
-Aleks Ianulardo Portfolio
+# Aleks Ianulardo Portfolio
 
 ## Description
 This is a work in progress project were i started off with a template i created and i will progressively 
